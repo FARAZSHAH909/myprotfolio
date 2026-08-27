@@ -43,9 +43,9 @@ export default function Header() {
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
-            href="#features"
+            href="#services"
             className="text-zinc-300 hover:text-pink relative group transition-colors duration-200"
-            onClick={(e) => handleScroll(e, "features")}
+            onClick={(e) => handleScroll(e, "services")}
           >
             Services
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink group-hover:w-full transition-all duration-300"></span>
@@ -55,15 +55,15 @@ export default function Header() {
             className="text-zinc-300 hover:text-pink relative group transition-colors duration-200"
             onClick={(e) => handleScroll(e, "portfolio")}
           >
-            Portfolio
+            Projects
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
-            href="#projects"
+            href="#resume"
             className="text-zinc-300 hover:text-pink relative group transition-colors duration-200"
-            onClick={(e) => handleScroll(e, "projects")}
+            onClick={(e) => handleScroll(e, "resume")}
           >
-            Projects
+            Experience & Skills
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
@@ -71,7 +71,7 @@ export default function Header() {
             className="text-zinc-300 hover:text-pink relative group transition-colors duration-200"
             onClick={(e) => handleScroll(e, "contacts")}
           >
-            Contacts
+            Contact
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink group-hover:w-full transition-all duration-300"></span>
           </Link>
         </nav>
@@ -82,12 +82,12 @@ export default function Header() {
             asChild
           >
             <Link href="#contacts" onClick={(e) => handleScroll(e, "contacts")}>
-              Work with Me
+              Hire Me
             </Link>
           </Button>
           <div className="flex items-center gap-3">
             <Link
-              href="https://github.com"
+              href="https://github.com/FARAZSHAH909"
               target="_blank"
               className="p-2 rounded-md bg-dark hover:bg-pink transition-all duration-200 hover:scale-110"
               aria-label="GitHub Profile"
@@ -95,15 +95,7 @@ export default function Header() {
               <GitHubIcon className="h-4 w-4 text-white" />
             </Link>
             <Link
-              href="https://twitter.com"
-              target="_blank"
-              className="p-2 rounded-md bg-dark hover:bg-pink transition-all duration-200 hover:scale-110"
-              aria-label="Twitter Profile"
-            >
-              <TwitterIcon className="h-4 w-4 text-white" />
-            </Link>
-            <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/faraz-shah-934947306/"
               target="_blank"
               className="p-2 rounded-md bg-dark hover:bg-pink transition-all duration-200 hover:scale-110"
               aria-label="LinkedIn Profile"
@@ -156,9 +148,9 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="#features"
+              href="#services"
               className="text-zinc-300 hover:text-pink transition-colors duration-200"
-              onClick={(e) => handleScroll(e, "features")}
+              onClick={(e) => handleScroll(e, "services")}
             >
               Services
             </Link>
@@ -167,28 +159,28 @@ export default function Header() {
               className="text-zinc-300 hover:text-pink transition-colors duration-200"
               onClick={(e) => handleScroll(e, "portfolio")}
             >
-              Portfolio
+              Projects
             </Link>
             <Link
-              href="#projects"
+              href="#resume"
               className="text-zinc-300 hover:text-pink transition-colors duration-200"
-              onClick={(e) => handleScroll(e, "projects")}
+              onClick={(e) => handleScroll(e, "resume")}
             >
-              Projects
+              Experience & Skills
             </Link>
             <Link
               href="#contacts"
               className="text-zinc-300 hover:text-pink transition-colors duration-200"
               onClick={(e) => handleScroll(e, "contacts")}
             >
-              Contacts
+              Contact
             </Link>
             <Button
               className="bg-pink hover:bg-pink/90 text-white font-medium px-6 py-2 rounded-full w-full max-w-xs"
               asChild
             >
               <Link href="#contacts" onClick={(e) => handleScroll(e, "contacts")}>
-                Work with Me
+                Hire Me
               </Link>
             </Button>
           </nav>

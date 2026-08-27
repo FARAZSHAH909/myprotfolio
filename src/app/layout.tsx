@@ -15,10 +15,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio",
-  description: "A personal portfolio showcasing my skills and experience",
+  title: "Faraz Shah | Back-End & Full-Stack Developer",
+  description: "Faraz Shah - Back-End & Full-Stack Developer specializing in Node.js, Express.js, MongoDB, REST APIs, React.js, and Tailwind CSS. Based in Karachi, Pakistan.",
   icons: {
-    icon: "/FS.png", // ✅ This replaces <link rel="icon" />
+    icon: "/FS.png",
   },
 };
 

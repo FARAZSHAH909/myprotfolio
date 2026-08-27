@@ -129,76 +129,79 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contacts" className="py-16">
+    <section id="contacts" className="py-20 bg-zinc-950/70">
       <div className="container max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold heading-gradient">Contact Us</h2>
+          <span className="text-pink uppercase tracking-wider text-sm font-semibold mb-3 inline-block">
+            Get In Touch
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink to-purple-500 bg-clip-text text-transparent mb-4">
+            Contact Me
+          </h2>
+          <p className="text-zinc-400 max-w-xl mx-auto text-base">
+            Have a project in mind, need a scalable backend API, or looking to hire a dedicated full-stack developer? Let's connect!
+          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-5">
-            <Card className="bg-dark-lighter border-none rounded-xl overflow-hidden h-full">
-              <CardContent className="p-0">
-                <div className="relative aspect-[4/3] w-full">
-                  <Image
-                    src="https://ext.same-assets.com/3856146916/912725668.jpeg"
-                    alt="Contact"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+            <Card className="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden h-full">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-white mb-2">Faraz Shah</h3>
+                <p className="text-pink font-medium text-sm mb-4">Back-End & Full-Stack Developer</p>
+                
+                <p className="text-zinc-400 mb-6 text-sm leading-relaxed">
+                  I am available for full-time roles, contract work, and freelance projects. Reach out via email, phone, or LinkedIn.
+                </p>
 
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-white mb-3">Personal Contact</h3>
-                  <p className="text-zinc-400 mb-6">
-                    I’m available for freelance work. Feel free to connect via phone, email, or social media.
-                  </p>
-
-                  <div className="mb-4">
-                    <span className="text-zinc-400 block mb-1">Email:</span>
+                <div className="space-y-4 mb-8">
+                  <div className="p-4 rounded-xl bg-zinc-800/60 border border-zinc-700/50">
+                    <span className="text-xs text-zinc-400 block mb-1 uppercase font-semibold">Email</span>
                     <a
                       href="mailto:farazshah9095@gmail.com"
-                      className="text-white font-medium hover:text-pink transition-colors"
+                      className="text-white font-medium hover:text-pink transition-colors text-sm break-all"
                     >
                       farazshah9095@gmail.com
                     </a>
                   </div>
 
-                  <div className="mb-6">
-                    <span className="text-zinc-400 block mb-1">Phone:</span>
+                  <div className="p-4 rounded-xl bg-zinc-800/60 border border-zinc-700/50">
+                    <span className="text-xs text-zinc-400 block mb-1 uppercase font-semibold">Phone</span>
                     <a
                       href="tel:+923183052533"
-                      className="text-white font-medium hover:text-pink transition-colors"
+                      className="text-white font-medium hover:text-pink transition-colors text-sm"
                     >
                       +92 318 3052533
                     </a>
                   </div>
 
-                  <div>
-                    <span className="text-zinc-400 block mb-3">Find with me</span>
-                    <div className="flex gap-3">
-                      <Link
-                        href="https://facebook.com"
-                        target="_blank"
-                        className="w-12 h-12 flex items-center justify-center rounded-lg service-icon-bg hover:bg-pink hover:shadow-none transition-all"
-                      >
-                        <FacebookIcon className="h-5 w-5 text-white" />
-                      </Link>
-                      <Link
-                        href="https://github.com/FARAZSHAH909"
-                        target="_blank"
-                        className="w-12 h-12 flex items-center justify-center rounded-lg service-icon-bg hover:bg-pink hover:shadow-none transition-all"
-                      >
-                        <GitHubIcon className="h-5 w-5 text-white" />
-                      </Link>
-                      <Link
-                        href="https://www.linkedin.com/in/faraz-shah-934947306/"
-                        target="_blank"
-                        className="w-12 h-12 flex items-center justify-center rounded-lg service-icon-bg hover:bg-pink hover:shadow-none transition-all"
-                      >
-                        <LinkedInIcon className="h-5 w-5 text-white" />
-                      </Link>
-                    </div>
+                  <div className="p-4 rounded-xl bg-zinc-800/60 border border-zinc-700/50">
+                    <span className="text-xs text-zinc-400 block mb-1 uppercase font-semibold">Location</span>
+                    <p className="text-white font-medium text-sm">
+                      Karachi, Pakistan
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <span className="text-xs uppercase tracking-wider text-zinc-400 block mb-3 font-semibold">Find Me Online</span>
+                  <div className="flex gap-3">
+                    <Link
+                      href="https://github.com/FARAZSHAH909"
+                      target="_blank"
+                      className="w-11 h-11 flex items-center justify-center rounded-lg bg-zinc-800 border border-zinc-700 hover:bg-pink hover:border-pink transition-all"
+                      aria-label="GitHub Profile"
+                    >
+                      <GitHubIcon className="h-5 w-5 text-white" />
+                    </Link>
+                    <Link
+                      href="https://www.linkedin.com/in/faraz-shah-934947306/"
+                      target="_blank"
+                      className="w-11 h-11 flex items-center justify-center rounded-lg bg-zinc-800 border border-zinc-700 hover:bg-pink hover:border-pink transition-all"
+                      aria-label="LinkedIn Profile"
+                    >
+                      <LinkedInIcon className="h-5 w-5 text-white" />
+                    </Link>
                   </div>
                 </div>
               </CardContent>
